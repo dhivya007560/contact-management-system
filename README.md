@@ -32,4 +32,3 @@ Via Thunder Client:
 3. In the 'Request URL' field, enter the URL of your application (e.g., http://localhost:3000) and select the HTTP method from the dropdown menu.
 5. Click on 'Send' to make the request.
 
-Happy coding! 🙂
