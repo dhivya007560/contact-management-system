@@ -54,3 +54,34 @@ Each contact contains the following fields:
   "phone": "9123456780",
   "email": "dhivya@gmail.com"
 }
+
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/contacts` | Create a new contact |
+| GET | `/contacts` | Retrieve all contacts |
+| GET | `/contacts/:id` | Retrieve a contact by ID |
+| PUT | `/contacts/:id` | Update a contact |
+| DELETE | `/contacts/:id` | Delete a contact |
+
+## Validation
+
+- `contactId` is required and must be unique.
+- `name` is required.
+- `phone` must contain exactly 10 digits.
+- `email` must have a valid format and must be unique.
+
+## Database
+
+- Database: `contact_management`
+- Collection: `contacts`
+- Database: MongoDB Atlas
+- ODM: Mongoose
+
+## How to Run
+
+```bash
+npm install
+node src/app.js
