@@ -1,34 +1,56 @@
-NodeJS + Express
-======================
-This is a simple NodeJS + Express application. This application serves as a basic template for a web server using NodeJS for the backend, Express as the web application framework.
+# Contact Management System
 
-What does this application do?
--------------------------------
-This application serves a simple web server that listens on defined port, default: `3000`.
+A RESTful Contact Management System developed using Node.js, Express.js, MongoDB Atlas, and Mongoose.
+
+The application provides APIs to create, retrieve, update, and delete contact records. It also includes input validation, unique field constraints, and error handling.
 
 
-# How to run?
-You can run the application in one of the following ways:
 
-1. Press `F5`. This will start the application in debug mode.
+## Technologies Used
 
-2. Open a terminal by going to 'View' -> 'Terminal'. Then run: 
-    > `npm run dev`
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- dotenv
+- REST API
+- cURL for API testing
 
-This will start the application in development mode.
 
 
-Via curl command:
------------------
-1. Open a terminal.
-2. Type the following command: 
-   > `curl http://localhost:3000`
-3. Press 'Enter' to make the request.
+## Features
 
-Via Thunder Client:
--------------------
-1. Click on the Thunder Client icon on the activity bar on the side. If you can't find it, you can search for 'Thunder Client' in the 'View' -> 'Extensions' menu.
-2. Once Thunder Client is open, click on 'New Request'.
-3. In the 'Request URL' field, enter the URL of your application (e.g., http://localhost:3000) and select the HTTP method from the dropdown menu.
-5. Click on 'Send' to make the request.
+- Create a new contact
+- Retrieve all contacts
+- Retrieve a contact by ID
+- Update contact information
+- Delete a contact
+- Validate phone numbers
+- Validate email addresses
+- Ensure unique contact IDs
+- Ensure unique email addresses
+- Handle invalid requests and database errors
+- Store contact data in MongoDB Atlas
 
+
+
+## Contact Data
+
+Each contact contains the following fields:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| contactId | String | Unique ID of the contact |
+| name | String | Name of the contact |
+| phone | String | 10-digit phone number |
+| email | String | Valid email address |
+
+### Example Contact
+
+```json
+{
+  "contactId": "C001",
+  "name": "Dhivya Asaithambi",
+  "phone": "9123456780",
+  "email": "dhivya@gmail.com"
+}
